@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir essa imagem en dispositivos diferentes u altere o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/fotop.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/fotom.png" type="image/png">
+        <img src="imagens/fotog.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Vamos aprender a reproduzir audio</h1>
+
+    <audio preload="metadata" src="media/Smokey's Lounge - TrackTribe.mp3" controls autoplay loop></audio>
+    <!-- <audio preload="metadata">
+       <source src="media/Smokey's Lounge - TrackTribe.mp3" type="sound/mpeg">
+       <source src="media/Smokey's Lounge - TrackTribe.ogg" type="sound/ogg">
+       <source src="media/Smokey's Lounge - TrackTribe.wav" type="sound/wav">    
+    </audio>-->
+    <p>caso seu navegador não seja compatível baixe o audio <a href="media/Smokey's Lounge - TrackTribe.mp3" download="Smokey's Lounge - TrackTribe.mp3" type="audio/mpeg" target="_blank">aqui</a>.</p> 
+    
+</body>
+</html>
